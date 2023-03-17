@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.Menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  height: 7rem;
+}
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 2.5rem;
+  margin-top: 0.5rem;
+}
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.menu-item > a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+}
+.menu-img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.menu-item .menu-icon-heading {
+  display: flex;
+  flex-direction: row;
+}
+.menu-item .menu-item-heading {
+  font-weight: 600;
+  font-size: 14px;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+}
+.menu-item:hover .menu-item-heading {
+  color: rgb(40, 116, 241);
+}
+
+.menu-down-icon {
+  margin-top: 1px;
+  margin-left: 4px;
+  font-size: 1rem;
+  color: #212121;
+  font-weight: 600;
+  transition: transform 0.5s;
+}
+.menu-item:hover .menu-down-icon {
+  color: rgb(40, 116, 241);
+  transform: rotate(-180deg);
+}
