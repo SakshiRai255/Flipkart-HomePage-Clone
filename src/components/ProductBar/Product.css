@@ -2,9 +2,32 @@
 .Product {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap:1rem;
+  border: 2px solid green;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  height: 22rem;
+  gap: 1rem;
 }
+.product-leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 17rem;
+}
+.product-leftSide > div {
+  text-align: center;
+  padding: 10px 0;
+}
+.product-leftSide > div > span {
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  padding: 10px 0;
+}
+.leftSideImg {
+  height: 10rem;
+  width: 14rem;
+}
+
+/*--------product-container------*/
 .product-container {
   display: flex;
   align-items: center;
@@ -21,8 +44,8 @@
   font-family: "Roboto", sans-serif;
 }
 .product-img {
-  height:12rem;
-  width:9rem;
+  height: 12rem;
+  width: 9rem;
 }
 .product-name {
   font-size: 14px;
@@ -40,13 +63,32 @@
   color: #212121;
   opacity: 0.6;
 }
-.product-container:hover .product-img{
-  transition: 0.5s;
+.product-container:hover .product-img {
+  transition: 0.1s;
   transform: scale(1.1);
 }
-/* .product-leftSide::before {
-  content: " ";
-  background: url(file:///C:/Users/Dougles/Desktop/NodeJs/flipkart/client/src/assets/productLeftSideImg.webp);
+
+.viewAll-btn {
+  color: #fff;
+  background-color: rgb(40, 116, 241);
+  padding: 10px 15px;
+  border: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.P-right-arrow {
   position: absolute;
-  background-position: 0px bottom;
-} */
+  top: 38rem;
+  right: 0;
+  height: 6rem;
+  width: 3.5rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+}

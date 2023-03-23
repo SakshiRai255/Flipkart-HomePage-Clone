@@ -5,7 +5,6 @@ import Electronics from "../assets/electronics.png";
 import Home from "../assets/home.jpg";
 import Appliances from "../assets/appliance.png";
 import Travel from "../assets/travel.png";
-import Offers from "../assets/offers.png";
 import Toys from "../assets/toys.png";
 import Wheelers from "../assets/wheelers.png";
 import { FiChevronDown } from "react-icons/fi";
@@ -41,10 +40,6 @@ export const menuItemData = [
   {
     image: Travel,
     name: "Travel",
-  },
-  {
-    image: Offers,
-    name: "Top Offers",
   },
   {
     image: Toys,

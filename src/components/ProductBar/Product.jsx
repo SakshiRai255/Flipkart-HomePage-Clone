@@ -1,14 +1,25 @@
 import React from "react";
 import { productData } from "../../Data/PraductData";
+import bestofElect from "../../assets/bestofelec.jpg";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 import "./Product.css";
 
 function Product() {
   return (
     <div className="Product">
+       <span className="P-right-arrow"><FaChevronLeft/></span>
+       <span className="p-right-arrow"><FaChevronRight/></span>
       <div className="product-leftSide">
-          <h2>Top Offers</h2>
-          <button>VIEW ALL</button>
-          <img src="" alt="" />
+        <div>
+          <span>Best of Electronics</span>
+        </div>
+        <div>
+          <button className="viewAll-btn">VIEW ALL</button>
+        </div>
+        <div>
+          <img src={bestofElect} alt="bestofElect" className="leftSideImg" />
+        </div>
       </div>
       {productData.map((product) => (
         <div className="product-container">

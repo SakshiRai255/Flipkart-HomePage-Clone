@@ -3,6 +3,7 @@ import HeroSlider from './components/HeroSlider/HeroSlider';
 import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import Product from './components/ProductBar/Product';
+import Product2 from './components/ProductBar/Product2';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Menu/>
       <HeroSlider/>
       <Product/>
+      <Product2/>
     </div>
   );
 }
