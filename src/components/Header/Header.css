@@ -130,6 +130,8 @@
   height: 21.2rem;
   width: 15rem;
   border-top: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius:5px;
   margin-top: 13px;
   padding: 10px;
   transform: translateX(-24%);
@@ -167,6 +169,8 @@
   gap: 1rem;
   padding: 1.5rem 1rem;
   border-bottom: 0.4px solid #e5e5e5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius:5px;
 }
 
 .signup-section {
@@ -252,6 +256,8 @@
   height: 11.9rem;
   width: 15rem;
   border-top: 1px solid #ccc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius:5px;
   margin-top: 6px;
   padding: 10px;
   display: none;
@@ -289,6 +295,8 @@
   gap: 1rem;
   padding: 1rem 1rem;
   border-bottom: 0.4px solid #e5e5e5;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius:5px;
 }
 .more-list-items > a > span {
   font-size: 14px;

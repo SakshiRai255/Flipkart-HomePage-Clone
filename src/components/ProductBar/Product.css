@@ -1,15 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .Product {
-  display: flex;
-  align-items: center;
+  width: 99.5%;
   background-color: #fff;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  height: 23rem;
-  gap: 1rem;
-  position: relative;
-  margin-left: 0px 10px;
 }
-.product-leftSide {
+
+/* .product-leftSide {
   display: flex;
   flex-direction: column;
   height: 23rem;
@@ -29,28 +25,26 @@
 .leftSideImg {
   height: 12.5rem;
   width: 14rem;
-}
+} */
 
 /*--------product-container------*/
 .product-container {
   display: flex;
-  flex-direction: row;
-}
-.product-container a {
-  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  text-decoration: none;
-  padding: 5px;
-  gap: 11px;
+  width: 17rem;
+  height: 21rem;
+  padding: 25px 15px;
+  gap: 12px;
   font-family: "Roboto", sans-serif;
-  margin: 1.5rem;
-  /* border: 2px solid red; */
+  margin:1.5rem;
 }
 .product-img {
   height: 200px;
   width: 200px;
+  margin-bottom: 20px;
+  /* object-fit: contain; */
 }
 .product-name {
   font-size: 14px;
@@ -68,9 +62,9 @@
   color: #212121;
   opacity: 0.6;
 }
-.product-items:hover .product-img {
-  transition: 0.1s;
+.product-container:hover .product-img {
   transform: scale(1.1);
+  transition: 700ms;
 }
 
 .viewAll-btn {
