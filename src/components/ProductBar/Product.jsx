@@ -27,26 +27,34 @@ function Product() {
   };
 
   return (
-    <div>
-      <div style={{ margin: "20px" }}>
-        <div className="Product">
-          {/* <div className="product-leftSide">
-            <div>
-              <img src={bestofElect} alt="bestOfElectronics" />
+    <div className="Product">
+      <div
+        className="product-section"
+        style={{ flexGrow: "1", overflow: "auto", padding: "0px 0px 10px" }}
+      >
+        <div className="product-container">
+          <div className="product-leftSide">
+            <div className="product-leftside-container">
+              <h2>Best of Electronics</h2>
+              <div>
+                <button className="viewAll-btn">View All</button>
+              </div>
             </div>
-          </div> */}
-          <div>
-            <Slider
-              slidesToShow={5}
-              slidesToScroll={3}
-              infinite={false}
-              prevArrow={<PreviousBtn />}
-              nextArrow={<NextBtn />}
-            >
-              {productData.map((product) => (
-                <Card product={product} />
-              ))}
-            </Slider>
+          </div>
+          <div className="product-slider">
+            <div style={{ width: "1250px" }}>
+              <Slider
+                slidesToShow={5}
+                slidesToScroll={3}
+                infinite={false}
+                prevArrow={<PreviousBtn />}
+                nextArrow={<NextBtn />}
+              >
+                {productData.map((product) => (
+                  <Card product={product} />
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
       </div>
@@ -56,11 +64,19 @@ function Product() {
 
 const Card = ({ product }) => {
   return (
-    <div className="product-container">
-      <img src={product.productImg} className="product-img " />
-      <p className="product-name">{product.productName}</p>
-      <p className="product-price">{product.productPrice}</p>
-      <p className="product-decrp">{product.productDecrp}</p>
+    <div className="product-items-section">
+      <div
+        className="product-items"
+        style={{ width: "252px;", padding: "10px 5px" }}
+      >
+        <div style={{ height: "220px", width: "252px" }}>
+          <img src={product.productImg} className="product-img " />
+        </div>
+        <div className="product-name">{product.productName}</div>
+        <div className="product-price">{product.productPrice}</div>
+        <div className="product-decrp">{product.productDecrp}</div>
+        <div></div>
+      </div>
     </div>
   );
 };
