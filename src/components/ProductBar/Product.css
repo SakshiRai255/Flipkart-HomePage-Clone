@@ -54,7 +54,7 @@
 /*--------product-container------*/
 
 .product-slider {
-  width: calc(97% - 230px);
+  width: calc(100% - 230px);
 }
 
 .product-items-section {
