@@ -10,19 +10,28 @@ import "./Product.css";
 
 function Product() {
   const PreviousBtn = (props) => {
-    const { className, onClick } = props;
+    console.log(props);
+    const { className, onClick,currentSlide } = props;
     return (
+      <>{
+        currentSlide !== 0 && (
       <div className={className} onClick={onClick}>
         <FaChevronLeft style={{ color: "#000", fontSize: "30px" }} />
       </div>
+       )}
+      </>
     );
   };
   const NextBtn = (props) => {
-    const { className, onClick } = props;
+    const { className, onClick,currentSlide } = props;
     return (
+      <>
+      {currentSlide == 0 &&(
       <div className={className} onClick={onClick}>
         <FaChevronRight style={{ color: "#000", fontSize: "30px" }} />
       </div>
+      )}
+      </>
     );
   };
 
