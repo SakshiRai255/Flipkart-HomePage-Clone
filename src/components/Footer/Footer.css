@@ -1,0 +1,89 @@
+.Footer {
+  background-color: #172337;
+  height: 420px;
+}
+.container {
+  width: 1400px;
+  margin: auto;
+  padding-top: 60px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.lists {
+  display: flex;
+  width: 900px;
+  margin: auto;
+  gap: 100px;
+}
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: #fff;
+}
+.list-items > p {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #878787;
+  margin-bottom: 10px;
+}
+.list-items > a {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffff;
+  text-decoration: none;
+}
+.list-items > a:hover {
+  text-decoration: underline;
+}
+.flipkart-address {
+  display: flex;
+  width: 500px;
+  gap: 30px;
+  border-left: 1px solid #474747;
+  padding-left:30px;
+  height: 150px;
+}
+
+.address-container > p {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #878787;
+  margin-bottom: 15px;
+}
+.address-container span {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 5px;
+  color: #ffff;
+}
+.addvertise-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid #474747;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+.f-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.addvertise-section >div >p{
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 5px;
+    color: #ffff;
+    padding-left: 5px;
+}

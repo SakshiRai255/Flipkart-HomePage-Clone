@@ -37,10 +37,7 @@ function Product() {
 
   return (
     <div className="Product">
-      <div
-        className="product-section"
-        style={{ flexGrow: "1", overflow: "auto", padding: "0px 0px 10px" }}
-      >
+      <div className="product-section" style={{ flexGrow: "1", overflow: "auto", padding: "0px 0px 10px" }}>
         <div className="product-container">
           <div className="product-leftSide">
             <div className="product-leftside-container">
@@ -74,10 +71,7 @@ function Product() {
 const Card = ({ product }) => {
   return (
     <div className="product-items-section">
-      <div
-        className="product-items"
-        style={{ width: "252px;", padding: "10px 5px" }}
-      >
+      <div className="product-items" style={{ width: "252px;", padding: "10px 5px" }}>
         <div style={{ height: "220px", width: "252px" }}>
           <img src={product.productImg} className="product-img " />
         </div>

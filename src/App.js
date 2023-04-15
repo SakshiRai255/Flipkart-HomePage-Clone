@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Menu from './components/Menu/Menu';
 import Product from './components/ProductBar/Product';
 import Product2 from './components/ProductBar/Product2';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <HeroSlider/>
       <Product/>
       <Product2/>
+      <Footer/>
     </div>
   );
 }
